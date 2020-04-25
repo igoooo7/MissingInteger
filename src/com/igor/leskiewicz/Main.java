@@ -12,7 +12,7 @@ public class Main {
        a[0] = -1;
        a[1] = 0;
        a[2] = 1;
-       a[3] = 8;
+       a[3] = 5;
        a[4] = 3;
        a[5] = 4;
 
@@ -20,11 +20,12 @@ public class Main {
        Collections.sort(al);
 
        boolean done = false;
+       int num;
 
         for (Integer i : al) {
             System.out.println(i);
 
-            int num = i+1;
+            num = i+1;
             if( num > 0 && !al.contains(num) && !done) {
                 System.out.println("Missing Integer: " + num + "!");
                 done = true;
